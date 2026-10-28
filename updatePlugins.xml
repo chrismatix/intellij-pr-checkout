@@ -1,0 +1,5 @@
+<plugins>
+    <plugin id="christoph.pr-checkout" url="https://github.com/chrismatix/intellij-pr-checkout/releases/download/v1.0.0/pr-checkout.jar" version="1.0.0">
+        <idea-version since-build="262"/>
+    </plugin>
+</plugins>
