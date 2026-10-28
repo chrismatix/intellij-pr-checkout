@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>christoph.pr-checkout</id>
     <name>Check Out Pull Request</name>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <vendor>Christoph Proeschel</vendor>
     <description>Checks out a GitHub pull request by number with gh and opens it in the Pull Requests tool window.</description>
     <idea-version since-build="262"/>
