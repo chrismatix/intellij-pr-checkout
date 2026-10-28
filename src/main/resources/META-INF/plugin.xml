@@ -1,0 +1,15 @@
+<idea-plugin>
+    <id>christoph.pr-checkout</id>
+    <name>Check Out Pull Request</name>
+    <version>1.0.0</version>
+    <vendor>Christoph Proeschel</vendor>
+    <description>Checks out a GitHub pull request by number with gh and opens it in the Pull Requests tool window.</description>
+    <idea-version since-build="262"/>
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="PrCheckout.CheckOutPullRequest" class="prcheckout.CheckOutPullRequestAction" text="Check Out Pull Request…">
+            <add-to-group group-id="Git.MainMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
