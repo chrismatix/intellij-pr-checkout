@@ -11,11 +11,11 @@ mkdir -p build/classes
 cp -r src/main/resources/. build/classes/
 jar --create --file build/pr-checkout.jar -C build/classes .
 
-cat > build/updatePlugins.xml <<EOF
+cat > updatePlugins.xml <<EOF
 <plugins>
-    <plugin id="christoph.pr-checkout" url="file://$PWD/build/pr-checkout.jar" version="$version">
+    <plugin id="christoph.pr-checkout" url="https://github.com/chrismatix/intellij-pr-checkout/releases/download/v$version/pr-checkout.jar" version="$version">
         <idea-version since-build="262"/>
     </plugin>
 </plugins>
 EOF
-echo "Built $version: file://$PWD/build/updatePlugins.xml"
+echo "Built $version"
